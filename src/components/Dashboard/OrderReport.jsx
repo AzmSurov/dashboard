@@ -53,17 +53,17 @@ const OrderReport = () => {
       ];
   return (
     <div>
-        <div class="p-6 bg-gray-900 rounded-lg">
+        <div class="p-6 bg-[#E9F5F3] dark:bg-gray-900 rounded-lg">
     <div class="flex justify-between items-center pb-4">
-      <h2 class="text-xl font-semibold leading-loose text-white">Order Report</h2>
-      <button class="flex py-3 px-4 rounded-lg border border-gray-700 gap-x-2.5">
-        <AiOutlineFilter className='text-white' size={20}/>
-        <span class="text-sm text-white">Filter order</span>
+      <h2 class="text-xl font-semibold leading-loose text-[#423E3E] dark:text-white">Order Report</h2>
+      <button class="flex py-3 px-4 rounded-lg border border-gray-700 gap-x-2.5 text-[#423E3E] dark:text-white">
+        <AiOutlineFilter className='' size={20}/>
+        <span class="text-sm">Filter order</span>
       </button>
     </div>
     <table class="w-full">
       <thead>
-        <tr class="text-sm font-semibold text-white">
+        <tr class="text-sm font-semibold text-[#423E3E] dark:text-white">
           <td class="py-4 border-b border-gray-700">Customer</td>
           <td class="py-4 border-b border-gray-700">Menu</td>
           <td class="py-4 border-b border-gray-700 text-right">Total Payment</td>

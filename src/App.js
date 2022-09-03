@@ -11,7 +11,7 @@ function App() {
   
 
   return (
-    <div className="flex w-full min-h-screen font-sans bg-gray-800">
+    <div className="flex w-full min-h-screen font-sans bg-[#FFFFFF] dark:bg-gray-800">
      <Sidebar setSelectedMenu={setSelectedMenu}/>
 
 <>

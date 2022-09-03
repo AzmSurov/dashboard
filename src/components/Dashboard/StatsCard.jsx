@@ -39,14 +39,14 @@ const StatsCard = () => {
         {stats.map(({id, title, percentage, value, status, icon, iconColor}) => (
                 <div
                 key={id}
-                class="flex flex-col p-5 w-1/3 bg-gray-900 rounded-lg gap-y-3"
+                class="flex flex-col p-5 w-1/3 bg-[#E9F5F3] dark:bg-gray-900 rounded-lg gap-y-3"
               >
                 <div class="flex items-center gap-x-3">
-                  <div class={"p-2 bg-gray-800 rounded-lg" + iconColor}>
+                  <div class={"p-2 bg-[#ffffff]/80 dark:bg-gray-800 rounded-lg" + iconColor}>
                     {icon}
                   </div>
                   <span
-                    class="text-xs font-medium text-white"
+                    class="text-xs font-medium text-[#423E3E] dark:text-white"
                   >
                     {percentage}
                   </span>
@@ -59,7 +59,7 @@ const StatsCard = () => {
                       </div>
                   </div>
                 </div>
-                <div class="text-3xl font-semibold text-white">{value}</div>
+                <div class="text-3xl font-semibold text-[#423E3E] dark:text-white">{value}</div>
                 <div class="text-sm tracking-wide text-gray-500">{title}</div>
               </div>
             ))}

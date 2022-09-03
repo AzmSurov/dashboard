@@ -25,13 +25,13 @@ const MostOrdered = () => {
       ];
 
   return (
-    <div className='pt-2'>
-        <div class="flex flex-col p-6 bg-gray-900 rounded-lg gap-y-4">
+    <div className=''>
+        <div class="flex flex-col p-6 text-[#423E3E] dark:text-white bg-[#E9F5F3] dark:bg-gray-900 rounded-lg gap-y-4">
     <div class="flex justify-between items-center">
-      <h2 class="text-xl font-semibold leading-loose text-white">Most Ordered</h2>
+      <h2 class="text-xl font-semibold leading-loose">Most Ordered</h2>
       <button class="flex gap-x-2.5 py-3 px-4 rounded-lg border border-gray-700">
-        <AiOutlineDownCircle size={20}className='text-white'/>
-        <span class="text-sm text-white">Today</span>
+        <AiOutlineDownCircle size={20} />
+        <span class="text-sm">Today</span>
       </button>
     </div>
     <hr class="border-gray-700" />
@@ -41,16 +41,15 @@ const MostOrdered = () => {
                 <div class="flex gap-x-4 items-center">
                 <img class="w-14 h-14" src={image} alt="" />
                 <div class="flex flex-col gap-y-0.5">
-                  <div class="text-sm font-medium text-white">{name}</div>
+                  <div class="text-sm font-medium text-[#423E3E] dark:text-white">{name}</div>
                   <div class="text-xs text-gray-500">{count} dishes ordered</div>
                 </div>
               </div>
             ))
         }
-
     </div>
     <button
-      class="py-3.5 rounded-lg w-full border border-[#EB966A] text-[#EB966A] text-sm font-semibold"
+      class="py-3.5 rounded-lg w-full border border-[#423E3E]  dark:border-[#EB966A] dark:text-[#EB966A] text-sm font-semibold"
     >
       View all
     </button>
